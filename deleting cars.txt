@@ -1,0 +1,9 @@
+json carmaster,cardata, cars
+where id_car <> 1
+and id_car <> 2
+and id_car <> 3
+and id_car <> 4
+and id_car <> 5
+and id_car <> 6
+and id_car <> 15
+and id_car <> 16

@@ -1,0 +1,361 @@
+*{
+    margin:0;
+    padding:0;
+    clear: both;
+    overflow: none;
+    _font-family: "roboto", "Segoe ui light", sans-serif;
+}
+/*============================HEADER========================================================*/
+header{
+    _background: rgba(128,0,0,1);
+    _background: rgba(32,154,165,1);
+    height:60px;
+}
+.header-img{
+    height: 50px;
+    position: absolute;
+    right:10px;
+    top: 7px;
+}
+header h1{
+    color:#5a5a5a;
+    font-size: 20px;
+    padding:7px;
+    font-family: "roboto";
+}
+
+/*============================HEADER========================================================*/
+/*============================MENU========================================================*/
+nav{
+	position: relative;
+    padding: 10px;
+	background-color: #fff;
+	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    height: 20px;
+}
+nav:before, nav:after
+{
+	position: absolute;
+	width: 20%;
+	height: 10px;
+	content: ' ';
+	left: 4px;
+	bottom: 10px;
+	background: transparent;
+	-webkit-transform: skew(-4deg) rotate(-4deg);
+	-moz-transform: skew(-4deg) rotate(-4deg);
+	-ms-transform: skew(-4deg) rotate(-4deg);
+	-o-transform: skew(-4deg) rotate(-4deg);
+	transform: skew(-4deg) rotate(-4deg);
+	-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+	z-index: -1;
+} 
+
+nav:after
+{
+	left: auto;
+	right: 12px;
+	-webkit-transform: skew(4deg) rotate(4deg);
+	-moz-transform: skew(4deg) rotate(4deg);
+	-ms-transform: skew(4deg) rotate(4deg);
+	-o-transform: skew(4deg) rotate(4deg);
+	transform: skew(4deg) rotate(4deg);
+}
+.nav-right{
+    position: relative;
+    _right:10px;
+	float: right;
+    
+}
+/*============================MENU========================================================*/
+/*============================MENU CLICK========================================================*/
+nav ul{
+    display: block;
+}
+nav ul li{
+    display: inline;
+}
+nav ul li a{
+    display: inline;
+    text-decoration: none;
+    color: #800000;
+    padding: 10px;
+    font-size: 15px;
+}
+nav ul li a:hover{
+    background-color: rgba(59,57,58,0.7);
+    color:#fff;
+    top:0;
+}
+/*============================MENU CLICK========================================================*/
+/*============================ICON========================================================*/
+.icon-register-icon8{
+    background-image: url(../icon/icons8/AddList.png);
+    background-size: 16px;
+    display: inline-block;
+	width: 16px;
+	height: 16px;
+	content: ' ';
+    z-index: 1;
+    margin: 0px 5px 0px;
+}
+.icon-back-icon8{
+    background-image: url(../icon/icons8/Back.png);
+    background-size: 16px;
+    display: inline-block;
+	width: 16px;
+	height: 16px;
+	content: ' ';
+    z-index: 1;
+    margin: 0px 5px 0px;
+}
+.icon-cancel-icon8{
+    background-image: url(../icon/icons8/Cancel.png);
+    background-size: 16px;
+    display: inline-block;
+	width: 16px;
+	height: 16px;
+	content: ' ';
+    z-index: 1;
+    margin: 0px 5px 0px;
+}
+.icon-new-icon8{
+    background-image: url(../icon/icons8/CreateNew.png);
+    background-size: 16px;
+    display: inline-block;
+	width: 16px;
+	height: 16px;
+	content: ' ';
+    z-index: 1;
+    margin: 0px 5px 0px;
+}
+.icon-refresh-icon8{
+    background-image: url(../icon/icons8/Refresh.png);
+    background-size: 16px;
+    display: inline-block;
+	width: 16px;
+	height: 16px;
+	content: ' ';
+    z-index: 1;
+    margin: 0px 5px 0px;
+}
+.icon-restart-icon8{
+    background-image: url(../icon/icons8/Restart.png);
+    background-size: 16px;
+    display: inline-block;
+	width: 16px;
+	height: 16px;
+	content: ' ';
+    z-index: 1;
+    margin: 0px 5px 0px;
+}
+.icon-save-icon8{
+    background-image: url(../icon/icons8/Save.png);
+    background-size: 16px;
+    display: inline-block;
+	width: 16px;
+	height: 16px;
+	content: ' ';
+    z-index: 1;
+    margin: 0px 5px 0px;
+}
+.icon-searchs-icon8{
+    background-image: url(../icon/icons8/Search.png);
+    background-size: 16px;
+    display: inline-block;
+	width: 16px;
+	height: 16px;
+	content: ' ';
+    z-index: 1;
+    margin: 0px 5px 0px;
+}
+.icon-detail-icon8{
+    background-image: url(../icon/icons8/Detail.png);
+    background-size: 16px;
+    display: inline-block;
+	width: 16px;
+	height: 16px;
+	content: ' ';
+    z-index: 1;
+    margin: 0px 5px 0px;
+}
+.icon-plus-icon8{
+    background-image: url(../icon/icons8/Plus.png);
+    background-size: 16px;
+    display: inline-block;
+	width: 16px;
+	height: 16px;
+	content: ' ';
+    z-index: 1;
+    margin: 0px 5px 0px;
+}
+.icon-minus-icon8{
+    background-image: url(../icon/icons8/Minus.png);
+    background-size: 16px;
+    display: inline-block;
+	width: 16px;
+	height: 16px;
+	content: ' ';
+    z-index: 1;
+    margin: 0px 5px 0px;
+}
+.icon-user-icon8{
+    background-image: url(../icon/icons8/UserCircle.png);
+    background-size: 16px;
+    display: inline-block;
+	width: 16px;
+	height: 16px;
+	content: ' ';
+    z-index: 1;
+    margin: 0px 5px 0px;
+}
+.icon-help-icon8{
+    background-image: url(../icon/icons8/help.png);
+    background-size: 18px;
+    display: inline-block;
+	width: 18px;
+	height: 16px;
+	content: ' ';
+    z-index: 1;
+    margin: 0px 10px 0px;
+}
+.icon-master-icon8{
+    background-image: url(../icon/icons8/Master.png);
+    background-size: 16px;
+    display: inline-block;
+	width: 16px;
+	height: 16px;
+	content: ' ';
+    z-index: 1;
+    margin: 0px 5px 0px;
+}
+.icon-edit-icon8{
+    background-image: url(../icon/icons8/Edit.png);
+    background-size: 16px;
+    display: inline-block;
+	width: 16px;
+	height: 16px;
+	content: ' ';
+    z-index: 1;
+    margin: 0px 5px 0px;
+}
+.img_meeting{
+	padding: 100px;
+}
+.img_trans{
+	padding: 51px;
+}
+.img_rpa{
+	padding: 82px;
+}
+.img_text1, .img_text2, .img_text3{
+	padding: 0px;
+	color: #800000;
+}
+/*============================ICON========================================================*/
+/*============================HOME========================================================*/
+#left{
+	width:33%;
+	left: 0;
+	position: absolute;
+	padding: 5px;
+	text-align: center;
+	height: 77%;
+}
+#middle{
+	width:33%;
+	left: 33%;
+	position: absolute;
+	padding: 5px;
+	text-align: center;
+	height: 77%;
+}
+#right{
+	width:33%;
+	right: 0;
+	position: absolute;
+	padding: 5px;
+	text-align: center;
+	height: 77%;
+}
+#left2{
+	width:50%;
+	left: 0;
+	position: absolute;
+	padding: 5px;
+	text-align: center;
+	height: 77%;
+}
+#right2{
+	width:50%;
+	right: 0;
+	position: absolute;
+	padding: 5px;
+	text-align: center;
+	height: 77%;
+}
+#left:hover,#middle:hover,#right:hover,#left2:hover,#right2:hover{
+	background-color: rgba(56,69,69,0.2);
+}
+#left:hover .img_meeting,#middle:hover .img_trans,#right:hover .img_rpa, #left2:hover .img_meeting,#right2:hover .img_rpa{
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.container{
+	padding: 5px;
+}
+/*#rooms{
+	width:100%;
+	height: 100%;
+	background:#eee;
+	_background: url(../img/meetingrooms.jpg) center;
+	_background-size: 100%;
+	_background-repeat: no-repeat;
+}*/
+/*============================END HOME========================================================*/
+/*============================SECTION========================================================*/
+body{
+    _background-color: #effbfc;
+}
+#rooms, #cars, #rpa{
+    margin:15px;
+    _border: 3px solid #209aa5;
+    border: 3px solid #7A003D;
+    _border: 3px solid #66668A;
+}
+section h1{
+    _background-color: #209aa5;
+    background-color: #7A003D;
+    _background-color: #66668A;
+    position: absolute;
+    z-index: 2;
+    color:#fff;
+    height: 26px;
+    right: 15px;
+    left:15px;
+    padding: 0px 0px 1px 8px;
+    font-family: "Segoe ui light";
+}
+/*============================SECTION========================================================*/
+/*============================FOOTER========================================================*/
+footer{
+    position: fixed;
+    bottom: 0;
+    width:100%;
+    background-color: #f4f4f4;
+   -webkit-box-shadow: 0 0px 12px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 0px 12px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0px 12px rgba(0, 0, 0, 0.3);
+    padding: 5px;
+}
+.footer-p{
+    text-align:center;
+    color: #800000;
+    font-size: 12px;
+}
+/*============================FOOTER========================================================*/

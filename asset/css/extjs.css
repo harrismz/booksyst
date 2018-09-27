@@ -1,0 +1,93 @@
+/*=============================================SELECT=============================================*/
+select:focus
+{
+	background: #8FFFEB;
+}
+input:focus{
+    background	: #8FFFEB;
+}
+/*=============================================SELECT=============================================*/
+/*=============================================ICON===============================================*/
+.icon-down-black{ 		background-image:url(../icon/black/down.png)			!important; }
+.icon-print-black{ 		background-image:url(../icon/black/print.png)			!important; }
+.icon-browse-black{ 	background-image:url(../icon/black/search.png)			!important; }
+.icon-upload-black{ 	background-image: url(../icon/black/upload.png)		    !important; }
+.icon-ofile-black{ 		background-image: url(../icon/black/clipboard.png)		!important; }
+.icon-reset-black{ 		background-image: url(../icon/black/basecircle.png)	    !important; }
+.icon-refresh-black{ 	background-image: url(../icon/black/refresh.png)		!important; }
+.icon-update-black {	background-image: url(../icon/black/edit.png)			!important; }
+.icon-delete-black {	background-image: url(../icon/black/delete.png)		    !important; }
+.icon-search-black {	background-image: url(../icon/black/search.png)		    !important; }
+.icon-add-black { 		background-image: url(../icon/black/add.png)			!important; }
+.icon-save-black { 		background-image: url(../icon/black/save.png)			!important; }
+.icon-setting-black { 	background-image: url(../icon/black/settings.png)		!important; }
+/*================================================================================================*/
+.icon-send {            background-image: url(../icon/send_mail.png)	        !important; }
+/*================================================================================================*/
+.icon-add-icon8 { 		background-image: url(../icon/icons8/Add.png)			      !important; }
+.icon-browse-icon8{ 	background-image:url(../icon/icons8/Search%20Filled.png)      !important; }
+.icon-update-icon8 {	background-image: url(../icon/icons8/Edit-100.png)            !important; }
+.icon-save-icon8 { 		background-image: url(../icon/icons8/save.png)			      !important; }
+.icon-reset-icon8{ 		background-image: url(../icon/icons8/refresh.png)      	      !important; }
+.icon-delete-icon8 {	background-image: url(../icon/icons8/delete.png)		      !important; }
+.icon-refresh-icon8 { 	background-image: url(../icon/icons8/refresh.png)		      !important; }
+.icon-search-icon8 {	background-image: url(../icon/icons8/Search%20Filled.png)     !important; }
+.icon-error-icon8 {	    background-image: url(../icon/icons8/Error-100.png)           !important; }
+.icon-duplicate-icon8 {	background-image: url(../icon/icons8/Copy-100.png)            !important; }
+.icon-send-icon8 {      background-image: url(../icon/icons8/Message%20Filled-100.png)!important; }
+.icon-download-icon8 {  background-image: url(../icon/icons8/Downloads-100.png)       !important; }
+.icon-approveman-icon8{ background-image: url(../icon/icons8/Approval.png)            !important; }
+.icon-rejectman-icon8 { background-image: url(../icon/icons8/Do%20Not%20Disturb-100.png)!important;}
+/*=============================================ICON===============================================*/
+/*========================================GRID FUNCTION===========================================*/
+.x-grid-row-over .x-grid-cell-inner { font-weight: bold; }
+.x-action-col-cell img { cursor: pointer; }
+.x-grid-row-summary  .x-grid-cell-inner {
+	font-weight		: bold;
+	font-size		: 11px;
+	padding-bottom	: 4px;
+}
+.x-grid-row-summary {
+	color			:#333;
+	background		: #f1f2f4;
+}
+
+.x-column-header-inner { 
+	font-weight		: bold;
+	text-align		: center;
+	white-space		: normal;
+}
+
+.x-column-header-inner .x-column-header-text {
+	white-space		: normal;
+	font-weight		: bold !important;
+}
+
+.x-grid-cell { padding: 1px; }
+td.wrap-text div { white-space: normal; }
+
+.x-grid-row .rps-bg-cell {
+	background-color	: #ecf; 
+    color				: #090; 
+    font-weight			: bold; 
+}
+
+.custom-dirty .x-grid-dirty-cell {
+	background-color	: #ffa;
+	background-image	: url(../icon/bullet_red.png);
+	background-position	: right center;
+	color				: #090;
+}
+
+.empty-txt-main {
+  color: #7E053B;
+  font-size: 20px;
+  padding-top: 80px;
+  text-align: center;
+}
+/*.x-grid-cell-headerId-gridcolumn-1031{*/
+#gridvip .x-grid-cell{
+	font:normal 15px tahoma,arial,verdana,sans-serif;
+	padding-left: 0px;
+}
+/*========================================GRID FUNCTION===========================================*/
