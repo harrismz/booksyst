@@ -6,10 +6,10 @@
 	$booksyst_userdept	= $_SESSION['booksyst_userdept'];
 	$booksyst_vuserctrtype	= $_SESSION['booksyst_vuserctrtype'];
 	
-	// $booksyst_userid	= 'admin';
-	// $booksyst_usertype	= '0';
-	// $booksyst_userdept	= '26';
-	// $booksyst_vuserctrtype	= '1';
+	$booksyst_userid	= 'admin';
+	$booksyst_usertype	= '0';
+	$booksyst_userdept	= '26';
+	$booksyst_vuserctrtype	= '1';
 
 	if($booksyst_userid <> "" and $booksyst_usertype <> "" and $booksyst_userdept <> ""){
 ?>
