@@ -42,8 +42,8 @@ try{
 		$sql    = "SELECT [id_rentrpa],(SELECT [rpaname] FROM [JEINID].[dbo].[RENT_rpadata] where [RENT_rpadata].id_rpa = [RENT_rpa].id_rpa) as rpacode
 					,(SELECT [rpaname2] FROM [JEINID].[dbo].[RENT_rpadata] where [RENT_rpadata].id_rpa = [RENT_rpa].id_rpa) as rpacode2
 					,[date],[start_time],[end_time],[dept],[incharge],[purpose],[remark] FROM [JEINID].[dbo].[RENT_rpa]
-					WHERE [date] BETWEEN convert(varchar(10), getdate(), 120) AND (SELECT MAX(convert(varchar(10), DATE, 120)) FROM [JEINID].[dbo].[RENT_rpa])
-					ORDER BY [date] ASC";
+					-- WHERE [date] BETWEEN convert(varchar(10), getdate(), 120) AND (SELECT MAX(convert(varchar(10), DATE, 120)) FROM [JEINID].[dbo].[RENT_rpa])
+					ORDER BY [date] DESC";
 		$rs     = $db_jeinid->Execute($sql);
 		$return = array();
 	}
