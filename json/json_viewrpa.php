@@ -4,9 +4,9 @@ $booksyst_userid    = @$_SESSION['booksyst_userid'];
 $booksyst_usertype  = @$_SESSION['booksyst_usertype'];
 $booksyst_userdept  = @$_SESSION['booksyst_userdept'];
 
-echo '<br>'.$booksyst_userid	= 'admin';
-echo '<br>'.$booksyst_usertype	= '0';
-echo '<br>'.$booksyst_userdept	= '26';
+$booksyst_userid	= 'admin';
+$booksyst_usertype	= '0';
+$booksyst_userdept	= '26';
 
 include ('../../adodb/con_jeinid.php');
 
