@@ -11,14 +11,14 @@
 		<link rel="stylesheet" href="../asset/css/style.css">
 		
 		<!-- Extjs -->
-		<link rel="stylesheet" href="../../extjs-4.2.2/resources/css/ext-all-gray.css">
+		<link rel="stylesheet" href="../../framework/extjs-4.2.2/resources/css/ext-all-gray.css">
 		<link rel="stylesheet" href="../asset/css/extjs.css">
-		<script type="text/javascript" src="../../extjs-4.2.2/ext-all.js"></script>
+		<script type="text/javascript" src="../../framework/extjs-4.2.2/ext-all.js"></script>
 		<script>
 			<?php
 				if(!empty($_GET['info'])){
 					$CON = $_GET['info'];
-					if($CON == "rooms" || $CON == "cars"){
+					if($CON == "rooms" || $CON == "cars" || $CON == "rpas"){
 						include($CON.'.js');
 					}
 					else{
@@ -39,6 +39,9 @@
 				}
 				elseif($CON == "cars"){
 					echo '<section id="cars"><h1>TRANSPORT RESERVATION</h1></section>';
+				}
+				elseif($CON == "rpas"){
+					echo '<section id="rpas"><h1>RPA OFFICE ROBOT</h1></section>';
 				}
 			}
 			else{
