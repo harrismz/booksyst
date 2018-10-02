@@ -322,7 +322,7 @@ nav ul li a:hover{
 body{
     _background-color: #effbfc;
 }
-#rooms, #cars, #rpa{
+#rooms, #cars, #rpa, #rpas{
     margin:15px;
     _border: 3px solid #209aa5;
     border: 3px solid #7A003D;
