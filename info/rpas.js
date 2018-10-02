@@ -179,17 +179,11 @@ Ext.onReady(function(){
                         activate:function(){
                             Ext.getCmp('btn_refresh').disable();
                             Ext.getCmp('btn_search').disable();
-                            Ext.getCmp('btn_register').disable();
-                            Ext.getCmp('btn_update').disable();
-                        	Ext.getCmp('btn_cancel').disable();
                         	
                         },
                         close:function(){
                             Ext.getCmp('btn_refresh').enable();
                             Ext.getCmp('btn_search').enable();
-                            Ext.getCmp('btn_register').enable();
-                            Ext.getCmp('btn_update').enable();
-                        	Ext.getCmp('btn_cancel').enable();
                         }
                     }
                 });
