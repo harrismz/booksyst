@@ -1,15 +1,15 @@
 <?php
 	session_start();
 	
-	$booksyst_userid	= $_SESSION['booksyst_userid'];
-	$booksyst_usertype	= $_SESSION['booksyst_usertype'];
-	$booksyst_userdept	= $_SESSION['booksyst_userdept'];
-	$booksyst_vuserctrtype	= $_SESSION['booksyst_vuserctrtype'];
+	// $booksyst_userid	= $_SESSION['booksyst_userid'];
+	// $booksyst_usertype	= $_SESSION['booksyst_usertype'];
+	// $booksyst_userdept	= $_SESSION['booksyst_userdept'];
+	// $booksyst_vuserctrtype	= $_SESSION['booksyst_vuserctrtype'];
 	
-	// echo '<br>'.$booksyst_userid	= 'admin';
-	// echo '<br>'.$booksyst_usertype	= '0';
-	// echo '<br>'.$booksyst_userdept	= '26';
-	// echo '<br>'.$booksyst_vuserctrtype	= '1';
+	echo '<br>'.$booksyst_userid	= 'admin';
+	echo '<br>'.$booksyst_usertype	= '0';
+	echo '<br>'.$booksyst_userdept	= '26';
+	echo '<br>'.$booksyst_vuserctrtype	= '1';
 
 	if($booksyst_userid <> "" and $booksyst_usertype <> "" and $booksyst_userdept <> ""){
 ?>
