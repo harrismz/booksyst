@@ -12,39 +12,76 @@ $start		= (($page*$limit)-$limit)+1;
 
 try{
 	if ($src_rpacode != "" && $src_date == ""){
-			$sql    = "SELECT [id_rentrpa],(SELECT [rpaname] FROM [JEINID].[dbo].[RENT_rpadata] where [RENT_rpadata].id_rpa = [RENT_rpa].id_rpa) as rpacode
-						,(SELECT [rpaname2] FROM [JEINID].[dbo].[RENT_rpadata] where [RENT_rpadata].id_rpa = [RENT_rpa].id_rpa) as rpacode2
-						,[date],[start_time],[end_time],[dept],[incharge],[purpose],[remark] FROM [JEINID].[dbo].[RENT_rpa]
-						WHERE (SELECT [id_rpa] FROM [JEINID].[dbo].[RENT_rpadata] where [RENT_rpadata].id_rpa = [RENT_rpa].id_rpa) = '$src_rpacode'
+			$sql    = "	SELECT [id_rentrpa],
+						(	SELECT [rpaname] 
+							FROM [JEINID].[dbo].[RENT_rpadata] 
+							where [RENT_rpadata].id_rpa = [RENT_rpa].id_rpa
+						) as rpacode
+						,(	SELECT [rpaname2] 
+							FROM [JEINID].[dbo].[RENT_rpadata] 
+							where [RENT_rpadata].id_rpa = [RENT_rpa].id_rpa
+						) as rpacode2
+						,[date],[start_time],[end_time],[dept],[incharge],[purpose],[remark] 
+						FROM [JEINID].[dbo].[RENT_rpa]
+						WHERE (	SELECT [id_rpa] 
+								FROM [JEINID].[dbo].[RENT_rpadata] 
+								where [RENT_rpadata].id_rpa = [RENT_rpa].id_rpa
+							) = '$src_rpacode'
 						ORDER BY [date] DESC, [end_time] DESC";
 		$rs     = $db_jeinid->Execute($sql);
 		$return = array();
 	}
 	elseif ($src_rpacode == "" && $src_date != ""){
-		$sql    = "SELECT [id_rentrpa],(SELECT [rpaname] FROM [JEINID].[dbo].[RENT_rpadata] where [RENT_rpadata].id_rpa = [RENT_rpa].id_rpa) as rpacode
-					,(SELE CT [rpaname2] FROM [JEINID].[dbo].[RENT_rpadata] where [RENT_rpadata].id_rpa = [RENT_rpa].id_rpa) as rpacode2
-					,[date],[start_time],[end_time],[dept],[incharge],[purpose],[remark] FROM [JEINID].[dbo].[RENT_rpa]
+			$sql    = "	SELECT [id_rentrpa],
+						(	SELECT [rpaname] 
+							FROM [JEINID].[dbo].[RENT_rpadata] 
+							where [RENT_rpadata].id_rpa = [RENT_rpa].id_rpa
+						) as rpacode
+						,(	SELECT [rpaname2] 
+							FROM [JEINID].[dbo].[RENT_rpadata] 
+							where [RENT_rpadata].id_rpa = [RENT_rpa].id_rpa
+						) as rpacode2
+						,[date],[start_time],[end_time],[dept],[incharge],[purpose],[remark] 
+						FROM [JEINID].[dbo].[RENT_rpa]
 					WHERE [date] = '$src_date'
 					ORDER BY [date] DESC, [end_time] DESC";
 		$rs     = $db_jeinid->Execute($sql);
 		$return = array();
 	}
 	elseif ($src_rpacode != "" && $src_date != ""){
-		$sql    = "SELECT [id_rentrpa],(SELECT [rpaname] FROM [JEINID].[dbo].[RENT_rpadata] where [RENT_rpadata].id_rpa = [RENT_rpa].id_rpa) as rpacode
-					,(SELECT [rpaname2] FROM [JEINID].[dbo].[RENT_rpadata] where [RENT_rpadata].id_rpa = [RENT_rpa].id_rpa) as rpacode2
-					,[date],[start_time],[end_time],[dept],[incharge],[purpose],[remark] FROM [JEINID].[dbo].[RENT_rpa]
-					WHERE (SELECT [id_rpa] FROM [JEINID].[dbo].[RENT_rpadata] where [RENT_rpadata].id_rpa = [RENT_rpa].id_rpa) = '$src_rpacode'
-					AND [date] = '$src_date'
-					ORDER BY [date] DESC, [end_time] DESC";
+			$sql    = "	SELECT [id_rentrpa],
+						(	SELECT [rpaname] 
+							FROM [JEINID].[dbo].[RENT_rpadata] 
+							where [RENT_rpadata].id_rpa = [RENT_rpa].id_rpa
+						) as rpacode
+						,(	SELECT [rpaname2] 
+							FROM [JEINID].[dbo].[RENT_rpadata] 
+							where [RENT_rpadata].id_rpa = [RENT_rpa].id_rpa
+						) as rpacode2
+						,[date],[start_time],[end_time],[dept],[incharge],[purpose],[remark] 
+						FROM [JEINID].[dbo].[RENT_rpa]
+						WHERE (	SELECT [id_rpa] 
+								FROM [JEINID].[dbo].[RENT_rpadata] 
+								where [RENT_rpadata].id_rpa = [RENT_rpa].id_rpa
+							) = '$src_rpacode'
+						AND [date] = '$src_date'
+						ORDER BY [date] DESC, [end_time] DESC";
 		$rs     = $db_jeinid->Execute($sql);
 		$return = array();
 	}
 	elseif($src_rpacode == "" && $src_date == ""){
-		$sql    = "SELECT [id_rentrpa],(SELECT [rpaname] FROM [JEINID].[dbo].[RENT_rpadata] where [RENT_rpadata].id_rpa = [RENT_rpa].id_rpa) as rpacode
-					,(SELECT [rpaname2] FROM [JEINID].[dbo].[RENT_rpadata] where [RENT_rpadata].id_rpa = [RENT_rpa].id_rpa) as rpacode2
-					,[date],[start_time],[end_time],[dept],[incharge],[purpose],[remark] FROM [JEINID].[dbo].[RENT_rpa]
-					-- WHERE [date] BETWEEN convert(varchar(10), getdate(), 120) AND (SELECT MAX(convert(varchar(10), DATE, 120)) FROM [JEINID].[dbo].[RENT_rpa])
-					ORDER BY [date] DESC, [end_time] DESC";
+			$sql    = "	SELECT [id_rentrpa],
+						(	SELECT [rpaname] 
+							FROM [JEINID].[dbo].[RENT_rpadata] 
+							where [RENT_rpadata].id_rpa = [RENT_rpa].id_rpa
+						) as rpacode
+						,(	SELECT [rpaname2] 
+							FROM [JEINID].[dbo].[RENT_rpadata] 
+							where [RENT_rpadata].id_rpa = [RENT_rpa].id_rpa
+						) as rpacode2
+						,[date],[start_time],[end_time],[dept],[incharge],[purpose],[remark] 
+						FROM [JEINID].[dbo].[RENT_rpa]
+						ORDER BY [date] DESC, [end_time] DESC";
 		$rs     = $db_jeinid->Execute($sql);
 		$return = array();
 	}
