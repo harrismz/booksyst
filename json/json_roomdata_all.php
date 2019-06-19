@@ -6,11 +6,11 @@ $booksyst_userdept  = $_SESSION['booksyst_userdept'];
 
 include ('../../adodb/con_jeinid.php');
 
-
+//and id_room <> '11' 
 try{
 	//$sql    = "select id_room, roomname, position from RENT_roomdata where dept = 'MEETING' order by position asc";
 	$sql    = "SELECT id_room, roomname, position, roomname2 FROM RENT_roomdata WHERE (dept = 'MEETING') OR (dept = 'TRAINING') OR (dept = 'HALL')  
-				and id_room <> '11' 
+				
 				ORDER BY id_urutan asc";
 	$rs     = $db_jeinid->Execute($sql);
 	$return = array();
