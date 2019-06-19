@@ -841,6 +841,8 @@ Ext.onReady(function(){
 											submitEmptyText : false,
 
 											success : function(form, action) {
+												// alert('updating success');
+
 												Ext.getCmp('xt_car_upd').focus(false, 1000);
 												ds_view.loadPage(1);
 												popwindow.close();
@@ -854,8 +856,13 @@ Ext.onReady(function(){
 											},
 
 											failure : function(form, action) {
+												// alert('updating failure');
+												//console.log(form);
+												// console.log(action.result.msg);
+
 												Ext.Msg.show({
-													title   : 'Failure 2',
+													title   : 'Oops, an error just happen ! [2]',
+													id      : 'error-msg',
 													icon	: Ext.Msg.ERROR,
 													msg     : action.result.msg,
 													buttons : Ext.Msg.OK
@@ -2119,7 +2126,8 @@ Ext.onReady(function(){
             /*selModel	: sm,
             viewConfig	: { enableTextSelection: true, },*/
             features	: [grouping,{ftype: 'summary'}],
-            tbar		:[{
+            tbar		:[
+            			{
                             xtype  : 'button',
                             id     : 'btn_refresh',
                             text   : 'Refresh',
@@ -2218,6 +2226,7 @@ Ext.onReady(function(){
 							{ header: 'PURPOSE',  	dataIndex: 'purpose',	flex:1, tdCls:'wrap-text',  align:'left'},
 							{ header: 'REMARK',  	dataIndex: 'remark',	flex:1, tdCls:'wrap-text',  align:'left'},*/
 							{ header: 'NO', xtype: 'rownumberer', width: 40, height: 40, sortable: false },
+							{ header: 'REGISTER ID',	dataIndex: 'id_rentcar',	width:70, tdCls:'wrap-text',  align:'center', hidden:true},
 							{ header: 'PLAT NOMOR',	dataIndex: 'platno',	width:80, tdCls:'wrap-text',  align:'center'},
 							{ header: 'DRIVER NAME',dataIndex: 'driver',    width:90, tdCls:'wrap-text',  align:'left'},
 							{ header: 'DRIVER TELP',dataIndex: 'driver_call',width:115, tdCls:'wrap-text',  align:'center'},
