@@ -855,7 +855,7 @@ Ext.onReady(function(){
 
 											failure : function(form, action) {
 												Ext.Msg.show({
-													title   : 'Failure 1',
+													title   : 'Failure 2',
 													icon	: Ext.Msg.ERROR,
 													msg     : action.result.msg,
 													buttons : Ext.Msg.OK
@@ -1013,7 +1013,7 @@ Ext.onReady(function(){
 
                                         failure : function(form, action) {
                                             Ext.Msg.show({
-                                                title   : 'Failure 1',
+                                                title   : 'Failure 3',
                                                 icon	: Ext.Msg.ERROR,
                                                 msg     : action.result.msg,
                                                 buttons : Ext.Msg.OK
@@ -1520,7 +1520,7 @@ Ext.onReady(function(){
 
                                         failure : function(form, action) {
                                             Ext.Msg.show({
-                                                title   : 'Failure 1',
+                                                title   : 'Failure 4',
                                                 icon	: Ext.Msg.ERROR,
                                                 msg     : action.result.msg,
                                                 buttons : Ext.Msg.OK
@@ -1715,7 +1715,7 @@ Ext.onReady(function(){
 
 											failure : function(form, action) {
 												Ext.Msg.show({
-													title   : 'Failure 1',
+													title   : 'Failure 5',
 													icon	: Ext.Msg.ERROR,
 													msg     : action.result.msg,
 													buttons : Ext.Msg.OK
