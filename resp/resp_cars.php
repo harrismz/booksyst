@@ -28,7 +28,7 @@
 			$xt_dest   = isset($_REQUEST['xt_dest']) ? $_REQUEST['xt_dest'] : '';
 			$xt_purpose   = isset($_REQUEST['xt_purpose']) ? $_REQUEST['xt_purpose'] : '';
 			$xt_remark   = isset($_REQUEST['xt_remark']) ? $_REQUEST['xt_remark'] : '';
-		// /*check*/ echo "{'success': true,'msg': '$xt_car | $xt_startdate | $xt_starttime | $xt_enddate | $xt_endtime | $startdatetime | $enddatetime | $xt_dept | $xt_remark'}";
+			// /*check*/ echo "{'success': true,'msg': '$xt_car | $xt_startdate | $xt_starttime | $xt_enddate | $xt_endtime | $startdatetime | $enddatetime | $xt_dept | $xt_remark'}";
 			
 			try{
 				$sql_check = "SELECT * FROM RENT_cars WHERE start_date < '{$enddatetime}' and end_date > '{$startdatetime}' and id_car = '{$xt_car}'";
@@ -66,55 +66,53 @@
 			}catch(exception $e){
 				$var_msg = $db_jeinid->ErrorNo();
 			}
-			
-			
 		}
 		elseif($xt_type=="update"){
-		$xt_idrentcar_upd= isset($_REQUEST['xt_idrentcar_upd']) ? $_REQUEST['xt_idrentcar_upd'] : '';
-		$xt_car_upd      = isset($_REQUEST['xt_car_upd']) ? $_REQUEST['xt_car_upd'] : '';
-		$xt_dept_upd     = isset($_REQUEST['xt_dept_upd']) ? $_REQUEST['xt_dept_upd'] : '';
-		$xt_incharge_upd = isset($_REQUEST['xt_incharge_upd']) ? $_REQUEST['xt_incharge_upd'] : '';
-		$xt_startdate_upd= isset($_REQUEST['xt_startdate_upd']) ? $_REQUEST['xt_startdate_upd'] : '';
-		$xt_starttime_upd= isset($_REQUEST['xt_starttime_upd']) ? $_REQUEST['xt_starttime_upd'] : '';
-		$xt_enddate_upd  = isset($_REQUEST['xt_enddate_upd']) ? $_REQUEST['xt_enddate_upd'] : '';
-		$xt_endtime_upd  = isset($_REQUEST['xt_endtime_upd']) ? $_REQUEST['xt_endtime_upd'] : '';
-		$startdatetime_upd	= $xt_startdate_upd." ".$xt_starttime_upd.".000";
-		$enddatetime_upd	= $xt_enddate_upd." ".$xt_endtime_upd.".000";
-		$xt_dest_upd   	= isset($_REQUEST['xt_dest_upd']) ? $_REQUEST['xt_dest_upd'] : '';
-		$xt_purpose_upd = isset($_REQUEST['xt_purpose_upd']) ? $_REQUEST['xt_purpose_upd'] : '';
-		$xt_remark_upd  = isset($_REQUEST['xt_remark_upd']) ? $_REQUEST['xt_remark_upd'] : '';
-		// /*check*/ echo "{'success': true,'msg': '$xt_car | $xt_startdate | $xt_starttime | $xt_enddate | $xt_endtime | $startdatetime | $enddatetime | $xt_dept | $xt_remark'}";
+			$xt_idrentcar_upd= isset($_REQUEST['xt_idrentcar_upd']) ? $_REQUEST['xt_idrentcar_upd'] : '';
+			$xt_car_upd      = isset($_REQUEST['xt_car_upd']) ? $_REQUEST['xt_car_upd'] : '';
+			$xt_dept_upd     = isset($_REQUEST['xt_dept_upd']) ? $_REQUEST['xt_dept_upd'] : '';
+			$xt_incharge_upd = isset($_REQUEST['xt_incharge_upd']) ? $_REQUEST['xt_incharge_upd'] : '';
+			$xt_startdate_upd= isset($_REQUEST['xt_startdate_upd']) ? $_REQUEST['xt_startdate_upd'] : '';
+			$xt_starttime_upd= isset($_REQUEST['xt_starttime_upd']) ? $_REQUEST['xt_starttime_upd'] : '';
+			$xt_enddate_upd  = isset($_REQUEST['xt_enddate_upd']) ? $_REQUEST['xt_enddate_upd'] : '';
+			$xt_endtime_upd  = isset($_REQUEST['xt_endtime_upd']) ? $_REQUEST['xt_endtime_upd'] : '';
+			$startdatetime_upd	= $xt_startdate_upd." ".$xt_starttime_upd.".000";
+			$enddatetime_upd	= $xt_enddate_upd." ".$xt_endtime_upd.".000";
+			$xt_dest_upd   	= isset($_REQUEST['xt_dest_upd']) ? $_REQUEST['xt_dest_upd'] : '';
+			$xt_purpose_upd = isset($_REQUEST['xt_purpose_upd']) ? $_REQUEST['xt_purpose_upd'] : '';
+			$xt_remark_upd  = isset($_REQUEST['xt_remark_upd']) ? $_REQUEST['xt_remark_upd'] : '';
+			// /*check*/ echo "{'success': true,'msg': '$xt_car | $xt_startdate | $xt_starttime | $xt_enddate | $xt_endtime | $startdatetime | $enddatetime | $xt_dept | $xt_remark'}";
 			
 			try{
-				$sql1 = "SELECT [id_car] FROM [JEINID].[dbo].[RENT_cardata] WHERE platno = '$xt_car_upd'";
+				echo $sql1 = "SELECT [id_car] FROM [JEINID].[dbo].[RENT_cardata] WHERE platno = '$xt_car_upd'";
 				$rs1 = $db_jeinid->Execute($sql1);
 				$idcar = $rs1->fields['0'];
 				
-				$sql_check = "SELECT * FROM RENT_cars WHERE start_date < '{$enddatetime_upd}' and end_date > '{$startdatetime_upd}' and id_car = '{$idcar}' and id_rentcar <> '{$xt_idrentcar_upd}'";
+				echo '<br>'.$sql_check = "SELECT * FROM RENT_cars WHERE start_date < '{$enddatetime_upd}' and end_date > '{$startdatetime_upd}' and id_car = '{$idcar}' and id_rentcar <> '{$xt_idrentcar_upd}'";
 				$rs_check = $db_jeinid->Execute($sql_check);
 				$exists_check = $rs_check->RecordCount();
 				
 				if($exists_check == 0){
 					try{
-						$sql = "UPDATE RENT_cars SET id_car = '$idcar', dept = '$xt_dept_upd', incharge = '$xt_incharge_upd',
+						echo '<br>'.$sql = "UPDATE RENT_cars SET id_car = '$idcar', dept = '$xt_dept_upd', incharge = '$xt_incharge_upd',
 								start_date = '$startdatetime_upd', end_date = '$enddatetime_upd', destination = '$xt_dest_upd',
 								purpose = '$xt_purpose_upd', remark = '$xt_remark_upd', update_nik = '$booksyst_userid', update_date = $datenow
 								WHERE id_rentcar = '$xt_idrentcar_upd'";
-						$rs = $db_jeinid->Execute($sql);
+						// $rs = $db_jeinid->Execute($sql);
 						
-						$tgl_send	= date("l, F d, Y");
-						$from	    = "JEINadmin@jvc-jein.co.id";
-						$bcc      	= "harris.zaki@jvc-jein.co.id";
-						$to			= "catering@jvc-jein.co.id";
-						$subject    = "Transport Reservation ( REVISE )";
-						$message 	= "Dear Mr. Mudasir,\r\nYou have Request of Transport Reservation on ".$tgl_send.".\n\nhere is the details :\n\n INCHARGE      : {$xt_incharge_upd}\n DEPARTMENT    : {$xt_dept_upd}\n START DATE    : {$xt_startdate_upd} - {$xt_starttime_upd}\n END DATE      : {$xt_enddate_upd} - {$xt_endtime_upd}\n DESTINATION   : {$xt_dest_upd}\n PURPOSE       : {$xt_purpose_upd}\n\nYou can open site http://136.198.117.48/booksyst/info/index.php?info=cars)\r\nand (http://svrfile/webform OR http://136.198.117.63/webform/) \r\n\r\nDescription : this mail is generated by system, please do not reply to the sender.";
+						// $tgl_send	= date("l, F d, Y");
+						// $from	    = "JEINadmin@jvc-jein.co.id";
+						// $bcc      	= "harris.zaki@jvc-jein.co.id";
+						// $to			= "catering@jvc-jein.co.id";
+						// $subject    = "Transport Reservation ( REVISE )";
+						// $message 	= "Dear Mr. Mudasir,\r\nYou have Request of Transport Reservation on ".$tgl_send.".\n\nhere is the details :\n\n INCHARGE      : {$xt_incharge_upd}\n DEPARTMENT    : {$xt_dept_upd}\n START DATE    : {$xt_startdate_upd} - {$xt_starttime_upd}\n END DATE      : {$xt_enddate_upd} - {$xt_endtime_upd}\n DESTINATION   : {$xt_dest_upd}\n PURPOSE       : {$xt_purpose_upd}\n\nYou can open site http://136.198.117.48/booksyst/info/index.php?info=cars)\r\nand (http://svrfile/webform OR http://136.198.117.63/webform/) \r\n\r\nDescription : this mail is generated by system, please do not reply to the sender.";
 						
-						ini_set('SMTP', '136.198.117.7');
-						ini_set('smtp_port', '25');
-						ini_set('sendmail_from', $from);
+						// ini_set('SMTP', '136.198.117.7');
+						// ini_set('smtp_port', '25');
+						// ini_set('sendmail_from', $from);
 						
-						$headers 	= "From: 	". $from . "\r\n" . "BCC: 	". $bcc;
-						$ret        = mail($to,$subject,$message,$headers);
+						// $headers 	= "From: 	". $from . "\r\n" . "BCC: 	". $bcc;
+						// $ret        = mail($to,$subject,$message,$headers);
 						$var_msg = 8;
 					}
 					catch (exception $e){
@@ -127,9 +125,6 @@
 			}catch(exception $e){
 				$var_msg = $db_jeinid->ErrorNo();
 			}
-			
-			
-		
 		}
 		elseif($xt_type == "cancel"){
 			$xt_idrentcar = isset($_REQUEST['xt_idrentcar']) ? $_REQUEST['xt_idrentcar'] : "";
