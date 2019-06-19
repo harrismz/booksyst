@@ -226,7 +226,7 @@
 			case $db_jeinid->ErrorNo():
 				$err	= $db_jeinid->ErrorMsg();
 				$error	= str_replace(chr(39), "", $err);
-				echo"{'success' : false,'msg': '$error'}";
+				echo"{'success' : false,'msg': '$db_jeinid->ErrorNo()'}";
 			break;
 			case 1:
 				echo"{'success' : true,'msg' : 'Data has been Register'}";
