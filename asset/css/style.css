@@ -367,11 +367,11 @@ nav ul li a:hover{
     height: 77%;
 }
 
-#left4:hover,#middle41:hover,#middle42:hover,#right3:hover,#left3:hover,#middle3:hover,#right3:hover{
+#left4:hover,#middle41:hover,#middle42:hover,#right3:hover,#left3:hover,#middle3:hover,#right3:hover,#right4:hover{
 	background-color: rgba(56,69,69,0.2);
 }
-#left4:hover .img_meeting,#middle41:hover .img_trans,#middle42:hover .img_rpa,#left4:hover .img_tablet, 
-#left3:hover .img_meeting,#middle3:hover .img_rpa,#left4:hover .img_tablet{
+#left4:hover .img_meeting,#middle41:hover .img_trans,#middle42:hover .img_rpa,#right4:hover .img_tablet, 
+#left3:hover .img_meeting,#middle3:hover .img_rpa,#right4:hover .img_tablet{
 	-moz-transform: scale(1.1);
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
