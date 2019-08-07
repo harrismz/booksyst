@@ -245,20 +245,31 @@ nav ul li a:hover{
 }
 .img_meeting{
 	padding: 100px;
+    /*border: solid blue 2px;*/
+    /*padding: 60px;*/
 }
 .img_trans{
 	padding: 51px;
+    /*border: solid blue 2px;*/
+    /*padding: 31px;*/
 }
 .img_rpa{
 	padding: 82px;
+    /*border: solid blue 2px;*/
+    /*padding: 42px;*/
 }
-.img_text1, .img_text2, .img_text3{
+.img_tablet{
+    padding: 82px;
+    /*border: solid blue 2px;*/
+    /*padding: 42px;*/
+}
+.img_text1, .img_text2, .img_text3, .img_text4{
 	padding: 0px;
 	color: #800000;
 }
 /*============================ICON========================================================*/
 /*============================HOME========================================================*/
-#left{
+/*#left{
 	width:33%;
 	left: 0;
 	position: absolute;
@@ -297,11 +308,70 @@ nav ul li a:hover{
 	padding: 5px;
 	text-align: center;
 	height: 77%;
+}*/
+
+#left3{
+    width:33%;
+    left: 0;
+    position: absolute;
+    padding: 5px;
+    text-align: center;
+    height: 77%;
 }
-#left:hover,#middle:hover,#right:hover,#left2:hover,#right2:hover{
+#middle3{
+    width:33%;
+    left: 33%;
+    position: absolute;
+    padding: 5px;
+    text-align: center;
+    height: 77%;
+}
+#right3{
+    width:33%;
+    right: 0;
+    position: absolute;
+    padding: 5px;
+    text-align: center;
+    height: 77%;
+}
+#left4{
+    width:25%;
+    left: 0;
+    position: absolute;
+    padding: 5px;
+    text-align: center;
+    height: 77%;
+}
+#middle41{
+    width:25%;
+    left: 25%;
+    position: absolute;
+    padding: 5px;
+    text-align: center;
+    height: 77%;
+}
+#middle42{
+    width:25%;
+    left: 50%;
+    position: absolute;
+    padding: 5px;
+    text-align: center;
+    height: 77%;
+}
+#right4{
+    width:25%;
+    right: 0;
+    position: absolute;
+    padding: 25px;
+    text-align: center;
+    height: 77%;
+}
+
+#left4:hover,#middle41:hover,#middle42:hover,#right3:hover,#left3:hover,#middle3:hover,#right3:hover{
 	background-color: rgba(56,69,69,0.2);
 }
-#left:hover .img_meeting,#middle:hover .img_trans,#right:hover .img_rpa, #left2:hover .img_meeting,#right2:hover .img_rpa{
+#left4:hover .img_meeting,#middle41:hover .img_trans,#middle42:hover .img_rpa,#left4:hover .img_tablet, 
+#left3:hover .img_meeting,#middle3:hover .img_rpa,#left4:hover .img_tablet{
 	-moz-transform: scale(1.1);
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
@@ -322,7 +392,7 @@ nav ul li a:hover{
 body{
     _background-color: #effbfc;
 }
-#rooms, #cars, #rpa, #rpas{
+#rooms, #cars, #rpa, #rpas, #tablet{
     margin:15px;
     _border: 3px solid #209aa5;
     border: 3px solid #7A003D;

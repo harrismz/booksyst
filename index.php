@@ -5,11 +5,21 @@
 	$booksyst_usertype	= $_SESSION['booksyst_usertype'];
 	$booksyst_userdept	= $_SESSION['booksyst_userdept'];
 	$booksyst_vuserctrtype	= $_SESSION['booksyst_vuserctrtype'];
+
+	// echo '<br>'.$booksyst_userid;
+	// echo '<br>'.$booksyst_usertype;
+	// echo '<br>'.$booksyst_userdept;
+	// echo '<br>'.$booksyst_vuserctrtype;
 	
 	// echo '<br>'.$booksyst_userid	= 'admin';
 	// echo '<br>'.$booksyst_usertype	= '0';
 	// echo '<br>'.$booksyst_userdept	= '26';
 	// echo '<br>'.$booksyst_vuserctrtype	= '1';
+
+	// echo '<br>'.$booksyst_userid	= 'clerk-iqc';
+	// echo '<br>'.$booksyst_usertype	= '0';
+	// echo '<br>'.$booksyst_userdept	= '22';
+	// echo '<br>'.$booksyst_vuserctrtype	= '0';
 
 	if($booksyst_userid <> "" and $booksyst_usertype <> "" and $booksyst_userdept <> ""){
 ?>
@@ -70,6 +80,19 @@
 						   echo 'JS not found !';
 						}
 					}
+					elseif(!empty($_GET['tablet'])){
+						$CON_dir = 'tablet';
+						$CONpages = scandir($CON_dir, 0);
+						unset($CONpages[0], $CONpages[1]);
+
+						$CON = $_GET['tablet'];
+						if(in_array($CON.'.js', $CONpages)){
+						 include($CON_dir.'/'.$CON.'.js');
+						} 
+						else{
+						   echo 'JS not found !';
+						}
+					}
 					elseif(!empty($_GET['device'])){
 						$CON_dir = 'device';
 						$CONpages = scandir($CON_dir, 0);
@@ -123,7 +146,20 @@
 
 					$show = $_GET['rpa'];
 					if(in_array($show.'.js', $showpages)){
-						echo '<section id="rpa"><h1>RPA RESERVATION</h1></section>';
+						echo '<section id="rpa"><h1>OTHER FACILITY</h1></section>';
+					} 
+					else{
+					   echo '<section>Page not found !</section>';
+					}
+				}
+				elseif(!empty($_GET['tablet'])){
+					$show_dir = 'tablet';
+					$showpages = scandir($show_dir, 0);
+					unset($showpages[0], $showpages[1]);
+
+					$show = $_GET['tablet'];
+					if(in_array($show.'.js', $showpages)){
+						echo '<section id="tablet"><h1>LESSON MEETING</h1></section>';
 					} 
 					else{
 					   echo '<section>Page not found !</section>';

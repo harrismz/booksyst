@@ -7,6 +7,30 @@
 	$vuserdept 	= $_REQUEST['userdept'];
 	$vuserctrtype 	= $_REQUEST['userctrtype'];
     $_SESSION['lbta_url'] 		= $_REQUEST['url'];
+
+ //    $vuserid 	= 'clerk-iqc';
+	// $vusertype 	= '0';
+	// $vuserdept 	= '22';
+	// $vuserctrtype 	= '1';
+ //    $_SESSION['lbta_url'] 		= $_REQUEST['url'];
+
+ //    $vuserid 	= 'mudasir';
+	// $vusertype 	= '0';
+	// $vuserdept 	= '15';
+	// $vuserctrtype 	= '6';
+ //    $_SESSION['lbta_url'] 		= $_REQUEST['url'];
+
+ //     $vuserid 	= 'admin';
+	// $vusertype 	= '0';
+	// $vuserdept 	= '26';
+	// $vuserctrtype 	= '1';
+ //    $_SESSION['lbta_url'] 		= $_REQUEST['url'];
+
+ //    $vuserid 	= 'clerk-eng';
+	// $vusertype 	= '0';
+	// $vuserdept 	= '26';
+	// $vuserctrtype 	= '6';
+ //    $_SESSION['lbta_url'] 		= $_REQUEST['url'];
 	
 	$rs = $db_jeinid->execute("select lbta_type from UserTbl where userid = '".$vuserid."'");
 	$akses = $rs->fields[0];
