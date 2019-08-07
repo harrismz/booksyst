@@ -137,16 +137,16 @@
 				echo"{'success' : true,'msg' : 'Data has been Edited'}";
 				break;
 			case 6:
-				echo"{'failure' : true,'msg' : 'This date already reserved, Please Check date and LESSON MEETING in search menu before you register LESSON MEETING.'}";
+				echo"{'failure' : true,'msg' : 'This date already reserved, Please Check date and License MEETING in search menu before you register License MEETING.'}";
 				break;
 			case 7:
-				echo"{'failure' : true,'msg' : 'This date already reserved, Please Check date and LESSON MEETING in search menu before you editing LESSON MEETING.'}";
+				echo"{'failure' : true,'msg' : 'This date already reserved, Please Check date and License MEETING in search menu before you editing License MEETING.'}";
 				break;
 			case 8:
 				echo"{'failure' : true,'msg' : 'You do not have access to edit this data'}";
 				break;
 			case 9:
-				echo"{'failure' : true,'msg' : 'You do not have access to cancel this LESSON MEETING Reservation'}";
+				echo"{'failure' : true,'msg' : 'You do not have access to cancel this License MEETING Reservation'}";
 				break;
 		}
 	}

@@ -41,7 +41,7 @@
 					echo '<section id="cars"><h1>TRANSPORT RESERVATION</h1></section>';
 				}
 				elseif($CON == "rpas"){
-					echo '<section id="rpas"><h1>RPA OFFICE ROBOT</h1></section>';
+					echo '<section id="rpas"><h1>OTHER FACILITY</h1></section>';
 				}
 			}
 			else{

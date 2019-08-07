@@ -19,7 +19,7 @@
 		}
 		?>
 		<li><a href="index.php?rpa=rpa"><span class="icon-register-icon8"></span>OTHER FACILITY</a></li>
-		<li><a href="index.php?tablet=tablet"><span class="icon-register-icon8"></span>LESSON MEETING</a></li>
+		<li><a href="index.php?tablet=tablet"><span class="icon-register-icon8"></span>LICENSE MEETING</a></li>
 		<li class="nav-right">
 			<a class="menu" href="back.php"><span class="icon-back-icon8"></span> BACK TO JEINWEB</a>
 			<a href="asset/WIReservationSystem.pdf" target="_blank"><span class="icon-help-icon8"></span>HELP</a>

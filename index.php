@@ -159,7 +159,7 @@
 
 					$show = $_GET['tablet'];
 					if(in_array($show.'.js', $showpages)){
-						echo '<section id="tablet"><h1>LESSON MEETING</h1></section>';
+						echo '<section id="tablet"><h1>License MEETING</h1></section>';
 					} 
 					else{
 					   echo '<section>Page not found !</section>';

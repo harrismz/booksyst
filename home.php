@@ -55,7 +55,7 @@
 				<div id="middle42">
 					<img class="img_rpa" width="130px" src="asset/img/RPA.png"/>
 					<br>
-					<h2 class="img_text3">RPA OFFICE ROBOT</h2>
+					<h2 class="img_text3">OTHER FACILITY</h2>
 				</div>
 			</a>
 			<?php
@@ -66,7 +66,7 @@
 					<div id="middle42">
 						<img class="img_rpa" width="130px" src="asset/img/RPA.png"/>
 						<br>
-						<h2 class="img_text3">RPA OFFICE ROBOT</h2>
+						<h2 class="img_text3">OTHER FACILITY</h2>
 					</div>
 				</a>
 				<?php
@@ -77,20 +77,20 @@
 					<div id="middle3">
 						<img class="img_rpa" width="130px" src="asset/img/RPA.png"/>
 						<br>
-						<h2 class="img_text3">RPA OFFICE ROBOT</h2>
+						<h2 class="img_text3">OTHER FACILITY</h2>
 					</div>
 				</a>
 				<?php
 			}
 
-		//	TABLET MEETING ONLINE
+		//	TABLET MEETING LICENSE
 			if($booksyst_userid === "admin" ){
 			?>
 			<a href="index.php?tablet=tablet">
 				<div id="right4">
-					<img class="img_tablet" width="130px" src="asset/img/OnlineMeeting.PNG"/>
+					<img class="img_tablet" width="220px" src="asset/img/OnlineMeeting.PNG"/>
 					<br>
-					<h2 class="img_text4">ONLINE MEETING</h2>
+					<h2 class="img_text4">LICENSE MEETING</h2>
 				</div>
 			</a>
 			<?php
@@ -99,9 +99,9 @@
 				?>
 				<a href="index.php?tablet=tablet">
 					<div id="right4">
-						<img class="img_tablet" width="130px" src="asset/img/OnlineMeeting.PNG"/>
+						<img class="img_tablet" width="220px" src="asset/img/OnlineMeeting.PNG"/>
 						<br>
-						<h2 class="img_text4">ONLINE MEETING</h2>
+						<h2 class="img_text4">LICENSE MEETING</h2>
 					</div>
 				</a>
 				<?php
@@ -110,9 +110,9 @@
 				?>
 				<a href="index.php?tablet=tablet">
 					<div id="right3">
-						<img class="img_tablet" width="130px" src="asset/img/OnlineMeeting.PNG"/>
+						<img class="img_tablet" width="220px" src="asset/img/OnlineMeeting.PNG"/>
 						<br>
-						<h2 class="img_text4">ONLINE MEETING</h2>
+						<h2 class="img_text4">LICENSE MEETING</h2>
 					</div>
 				</a>
 				<?php

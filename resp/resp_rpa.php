@@ -137,16 +137,16 @@
 				echo"{'success' : true,'msg' : 'Data has been Edited'}";
 				break;
 			case 6:
-				echo"{'failure' : true,'msg' : 'This date already reserved, Please Check date and RPA in search menu before you register RPA Office Robot.'}";
+				echo"{'failure' : true,'msg' : 'This date already reserved, Please Check date and RPA in search menu before you register OTHER FACILITY.'}";
 				break;
 			case 7:
-				echo"{'failure' : true,'msg' : 'This date already reserved, Please Check date and RPA in search menu before you editing RPA Office Robot.'}";
+				echo"{'failure' : true,'msg' : 'This date already reserved, Please Check date and RPA in search menu before you editing OTHER FACILITY.'}";
 				break;
 			case 8:
 				echo"{'failure' : true,'msg' : 'You do not have access to edit this data'}";
 				break;
 			case 9:
-				echo"{'failure' : true,'msg' : 'You do not have access to cancel this RPA Office Robot Reservation'}";
+				echo"{'failure' : true,'msg' : 'You do not have access to cancel this OTHER FACILITY Reservation'}";
 				break;
 		}
 	}
