@@ -12,7 +12,7 @@
 				</a>
 				<?php
 			}
-			elseif($booksyst_vuserctrtype == "1" or $booksyst_usertype >= "1" or $booksyst_userid == "mudasir"){
+			elseif($booksyst_vuserctrtype == "1" or $booksyst_usertype >= "1" or $booksyst_userid == "mudasir" or $booksyst_userid == "indah" or $booksyst_userid === "ota"){
 				?>
 				<a href="index.php?rooms=rooms">
 					<div id="left4">
@@ -36,7 +36,7 @@
 			}
 		
 		//	transport
-			if($booksyst_vuserctrtype == "1" or $booksyst_usertype >= "1" or $booksyst_userid == "mudasir" or $booksyst_userid === "ota"){
+			if($booksyst_vuserctrtype == "1" or $booksyst_usertype >= "1" or $booksyst_userid == "mudasir" or $booksyst_userid == "indah" or $booksyst_userid === "ota"){
 				?>
 				<a href="index.php?cars=cars">
 					<div id="middle41">
@@ -60,7 +60,7 @@
 			</a>
 			<?php
 			}
-			elseif($booksyst_vuserctrtype == "1" or $booksyst_usertype >= "1" or $booksyst_userid == "mudasir"){
+			elseif($booksyst_vuserctrtype == "1" or $booksyst_usertype >= "1" or $booksyst_userid == "mudasir" or $booksyst_userid == "indah" or $booksyst_userid === "ota"){
 				?>
 				<a href="index.php?rpa=rpa">
 					<div id="middle42">
@@ -95,7 +95,7 @@
 			</a>
 			<?php
 			}
-			elseif($booksyst_vuserctrtype == "1" or $booksyst_usertype >= "1" or $booksyst_userid == "mudasir"){
+			elseif($booksyst_vuserctrtype == "1" or $booksyst_usertype >= "1" or $booksyst_userid == "mudasir" or $booksyst_userid == "indah" or $booksyst_userid === "ota"){
 				?>
 				<a href="index.php?tablet=tablet">
 					<div id="right4">

@@ -12,7 +12,7 @@
 			<li><a href="index.php?rooms=rooms"><span class="icon-register-icon8"></span>ROOM RESERVATION</a></li>
 			<?php
 		}
-		if($booksyst_vuserctrtype == "1" or $booksyst_usertype >= "1" or $booksyst_userid == "mudasir" ){
+		if($booksyst_vuserctrtype == "1" or $booksyst_usertype >= "1" or $booksyst_userid == "mudasir" or $booksyst_userid == "indah"  or $booksyst_userid === "ota"){
 			?>
 			<li><a href="index.php?cars=cars"><span class="icon-register-icon8"></span>TRANSPORT RESERVATION</a></li>
 			<?php
