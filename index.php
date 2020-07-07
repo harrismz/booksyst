@@ -106,6 +106,19 @@
 						   echo 'JS not found !';
 						}
 					}
+					elseif(!empty($_GET['ict'])){
+						$CON_dir = 'ict';
+						$CONpages = scandir($CON_dir, 0);
+						unset($CONpages[0], $CONpages[1]);
+
+						$CON = $_GET['ict'];
+						if(in_array($CON.'.js', $CONpages)){
+						 include($CON_dir.'/'.$CON.'.js');
+						} 
+						else{
+						   echo 'JS not found !';
+						}
+					}
 				?>
 			</script>
 		</head>
@@ -173,6 +186,19 @@
 					$show = $_GET['device'];
 					if(in_array($show.'.js', $showpages)){
 						echo '<section id="device"><h1>DEVICE RESERVATION</h1></section>';
+					} 
+					else{
+					   echo '<section>Page not found !</section>';
+					}
+				}
+				elseif(!empty($_GET['ict'])){
+					$show_dir = 'ict';
+					$showpages = scandir($show_dir, 0);
+					unset($showpages[0], $showpages[1]);
+
+					$show = $_GET['ict'];
+					if(in_array($show.'.js', $showpages)){
+						echo '<section id="ict"><h1>DEVICES RESERVATION</h1></section>';
 					} 
 					else{
 					   echo '<section>Page not found !</section>';

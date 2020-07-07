@@ -7,7 +7,7 @@ $booksyst_userdept  = $_SESSION['booksyst_userdept'];
 include ('../../adodb/con_jeinid.php');
 
 $xt_car_src     = isset($_REQUEST['src_car']) ? $_REQUEST['src_car'] : '';
-$xt_date_src1    = isset($_REQUEST['src_date']) ? $_REQUEST['src_date'] : '';
+$xt_date_src1   = isset($_REQUEST['src_date']) ? $_REQUEST['src_date'] : '';
 $xt_date_src	= substr($xt_date_src1,0,10);
 $xt_incharge_src= isset($_REQUEST['src_incharge']) ? $_REQUEST['src_incharge'] : '';
 
