@@ -1859,9 +1859,9 @@ Ext.onReady(function(){
                             iconCls		: 'icon-reset-icon8',
                             handler		: function(){
                                 this.up('form').getForm().reset();
-                                ds_view.proxy.setExtraParam('src_ict', '' );
-                            	ds_view.proxy.setExtraParam('src_date', '' );
-                            	ds_view.proxy.setExtraParam('src_incharge', '' );
+                                ds_view.proxy.setExtraParam('xt_ictname_src', '' );
+                            	ds_view.proxy.setExtraParam('xt_date_src', '' );
+                            	ds_view.proxy.setExtraParam('xt_incharge_src', '' );
                             	ds_view.loadPage(1);
                             }
                         },
@@ -1872,9 +1872,9 @@ Ext.onReady(function(){
 								var form = this.up('form').getForm();
                                 var popwindow = this.up('window');
                                 if (form.isValid()) {
-									ds_view.proxy.setExtraParam('src_ict', Ext.getCmp('xt_ict_src').getValue() );
-									ds_view.proxy.setExtraParam('src_date', Ext.getCmp('xt_date_src').getValue() );
-									ds_view.proxy.setExtraParam('src_incharge', Ext.getCmp('xt_incharge_src').getValue() );
+									ds_view.proxy.setExtraParam('xt_ictname_src', Ext.getCmp('xt_ictname_src').getValue() );
+									ds_view.proxy.setExtraParam('xt_date_src', Ext.getCmp('xt_date_src').getValue() );
+									ds_view.proxy.setExtraParam('xt_incharge_src', Ext.getCmp('xt_incharge_src').getValue() );
 									ds_view.loadPage(1); 
 									popwindow.close();
                                 }
@@ -1947,9 +1947,9 @@ Ext.onReady(function(){
 					iconCls: 'icon-refresh-icon8',
 					scale  : 'medium',
 					handler: function() {
-						ds_view.proxy.setExtraParam('src_ict', '' );
-						ds_view.proxy.setExtraParam('src_date', '' );
-						ds_view.proxy.setExtraParam('src_incharge', '' );
+						ds_view.proxy.setExtraParam('xt_ictname_src', '' );
+						ds_view.proxy.setExtraParam('xt_date_src', '' );
+						ds_view.proxy.setExtraParam('xt_incharge_src', '' );
 						ds_view.loadPage(1);
 					}
 				},
