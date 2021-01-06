@@ -7,7 +7,7 @@ $booksyst_userdept  = $_SESSION['booksyst_userdept'];
 include ('../../adodb/con_jeinid.php');
 
 try{
-    if($booksyst_userid == 'a.rodi' || $booksyst_userid == 'a.rodi-im'|| $booksyst_userid == 'a.rodi-mecha'|| $booksyst_userid === 'abner-log'|| $booksyst_userid == 'abner-mc' || $booksyst_userid == 'abner-pln' || $booksyst_userid == 'agustinus' || $booksyst_userid == 'idang' || $booksyst_userid == 'indah' || $booksyst_userid == 'indahiqc' || $booksyst_userid == 'torip' || $booksyst_userid == 'morisaka' || $booksyst_userid == 'nakashige' || $booksyst_userid == 'muramatsu'){
+    if($booksyst_userid == 'a.rodi' || $booksyst_userid == 'a.rodi-im'|| $booksyst_userid == 'a.rodi-mecha'|| $booksyst_userid === 'abner-log'|| $booksyst_userid == 'abner-mc' || $booksyst_userid == 'abner-pln' || $booksyst_userid == 'agustinus' || $booksyst_userid == 'idang' || $booksyst_userid == 'indah' || $booksyst_userid == 'indahiqc' || $booksyst_userid == 'torip' || $booksyst_userid == 'morisaka' || $booksyst_userid == 'nakashige' || $booksyst_userid == 'muramatsu' || $booksyst_userid == 'takei' || $booksyst_userid == 'nogamida'){
 		//$sql    = "select id_room, roomname, position from RENT_roomdata where dept = 'MEETING' order by position asc";
 	echo	$sql    = "SELECT id_room, roomname, position, roomname2 FROM RENT_roomdata WHERE (dept = 'MEETING') OR (dept = 'TRAINING') OR (dept = 'HALL') ORDER BY id_urutan asc";
 	}
@@ -38,4 +38,3 @@ echo json_encode($data);
 
 $db_jeinid->Close();
 $db_jeinid=null;
-?>
